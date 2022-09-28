@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="men">
+    <div id="menu" class="menu">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Корзина</a></li>
+        </ul>
+    </div>
+    <div class="men">
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+</div>
+    </div>
+<div>
+<ol>
+    <li>d</li>
+    <li>d</li>
+    <li>d</li>
+    <li>d</li>
+    <li>d</li>
+</ol>
+</div>
+<script>
+    let menuElem = document.getElementById('menu');
+    let titleElem = document.querySelector('.burger');
+
+    titleElem.onclick = function() {
+        menuElem.classList.toggle('open');
+        titleElem.classList.toggle('close');
+    };
+  </script>
+</body>
+</html>

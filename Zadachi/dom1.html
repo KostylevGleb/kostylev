@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <form name="search">
+    <label>Search the site:
+      <input type="text" name="search">
+    </label>
+    <input type="submit" value="Search!">
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+    Search the visitors:
+    <table id="age-table">
+      <tr>
+        <td>Age:</td>
+        <td id="age-list">
+          <label>
+            <input type="radio" name="age" value="young">less than 18</label>
+          <label>
+            <input type="radio" name="age" value="mature">18-50</label>
+          <label>
+            <input type="radio" name="age" value="senior">more than 50</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Additionally:</td>
+        <td>
+          <input type="text" name="info[0]">
+          <input type="text" name="info[1]">
+          <input type="text" name="info[2]">
+        </td>
+      </tr>
+
+    </table>
+
+    <input type="submit" value="Search!">
+  </form>
+
+  <script>
+    let zad1 = document.getElementById(['age-table']);
+    alert(zad1.innerHTML);
+    let zad2 = zad1.getElementsByTagName('label');
+    for(let elem of zad2) {
+        alert(elem.innerHTML);
+    }
+    let zad3 = zad1.querySelector('td');
+    alert(zad3.innerHTML);
+    let zad4 = document.getElementsByName('search')[0];
+    alert(zad4.innerHTML);
+    let zad5 = zad4.querySelector('input');
+    alert(zad5);
+    let zad6 = zad4.querySelectorAll('input')
+    alert(zad6[zad6.length-1]);
+  </script>
+</body>
+</html>

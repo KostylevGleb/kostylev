@@ -1,0 +1,58 @@
+body {
+    margin: 0 auto;
+}
+.men {
+    display: flex;
+    justify-content: flex-end;
+}
+.line {
+    border: 2px solid rgb(16, 83, 68);
+    border-radius: 12px;
+    background-color: rgb(16, 83, 68);
+    margin: 5px;
+}
+.burger {
+    transition: 1s;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: rgb(51, 151, 118);
+    padding: 5px;
+    border-radius: 12px;
+}
+.burger:hover{
+    background-color: rgb(65, 205, 158);
+}
+.menu {
+    font-size: 20px;
+    position: absolute;
+    margin: 0;
+    background-color: aqua;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+    margin-right: -200px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu ul {
+    padding: 0;
+}
+.menu li {
+    list-style: none;
+    margin: 20px;
+    text-align: left;
+}
+.menu.open {
+    transition: 1s;
+    margin-right: 0px;
+}
+.close {
+    transition: 1s;
+    transform: rotate(90deg);
+}
