@@ -25,6 +25,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="favourite.html">Избранное</a>
               </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -38,7 +39,6 @@
     <div class="main_2">
     </div>
     </div>
-    </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -50,7 +50,7 @@
               <form class="needs-validation add-film">
                 <div class="mb-3">
                   <label for="validationCustom01" class="form-label">Загрузите картинку</label>
-                  <input type="file" class="form-control image" id="validationCustom01" required>
+                  <input type="file" accept="image/*" class="form-control image" id="validationCustom01" required>
                 </div>
                 <div class="mb-3">
                   <label for="validationCustom02" class="form-label">Введите название фильма</label>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="validationCustom03" class="form-label">Введите дату выхода фильма</label>
-                  <input type="text" class="form-control date" id="validationCustom03" required>
+                  <input type="date" class="form-control date" id="validationCustom03" required>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary btn-film-close" data-bs-dismiss="modal">Закрыть</button>
