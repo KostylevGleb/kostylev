@@ -10,12 +10,12 @@
       let film = JSON.parse(localStorage[filmCheck]);
       if (film.title != title.value) {
         localStorage.removeItem(film.title);
-        //film.img = img.value;
+        film.img = img.value;
         film.title = title.value;
         film.date = date.value;
         loadFilmJSON(title.value, film);
       } else {
-        //film.img = img.value;
+        film.img = img.value;
         film.title = title.value;
         film.date = date.value;
         loadFilmJSON(title.value, film);
